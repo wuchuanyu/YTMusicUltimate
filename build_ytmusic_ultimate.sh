@@ -104,7 +104,7 @@ else
     echo "Cloning Theos..."
     git clone --quiet --recursive https://github.com/theos/theos.git "$THEOS"
     cd "$THEOS"
-    git checkout 67db2ab8d950910161730de77c322658ea3e6b44
+    git checkout 344ee5925df036dbd1312b783ad5a00d153c2445
     git submodule update --recursive
     cd "$BUILD_DIR"
     
@@ -134,9 +134,8 @@ echo "\nStep 6: Building Tweak for Sideloading..."
 cd "$WORKSPACE"
 # 明确设置THEOS环境变量，确保与GitHub Workflow一致
 export THEOS="$BUILD_DIR/theos"
-# 使用FINALPACKAGE=1标志并添加-Wno-error标志来禁用所有警告作为错误
-# 这样可以确保变量长度数组的警告不会导致编译失败
-make clean package SIDELOADING=1 FINALPACKAGE=1 CFLAGS="-Wno-error" CXXFLAGS="-Wno-error" > build_output.log 2>&1
+# 使用FINALPACKAGE=1标志并添加DEBUG=0标志与GitHub Workflow保持一致
+make clean package DEBUG=0 FINALPACKAGE=1 SIDELOADING=1 > build_output.log 2>&1
 build_result=$?
 
 if [ $build_result -ne 0 ]; then
@@ -150,8 +149,8 @@ echo "✓ Tweak built successfully"
 # 注入tweak到IPA
 echo "\nStep 7: Injecting tweak into IPA..."
 
-# 找到生成的deb文件
-tweak_package=$(ls packages/*.deb 2>/dev/null)
+# 找到生成的deb文件（选择最新版本）
+tweak_package=$(ls -t packages/*.deb 2>/dev/null | head -1)
 if [ -z "$tweak_package" ]; then
     echo "✗ No tweak package found in packages directory"
     exit 1
