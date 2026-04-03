@@ -1,0 +1,58 @@
+[0;36m==> [1;39mCleaning…[m
+[1;31m> [1;3;39mMaking all for tweak YTMusicUltimate…[m
+[0;31m==> [1;39mPreprocessing Source/PlaybackRate.xm…[m
+[0;31m==> [1;39mPreprocessing Source/YTMTab.x…[m
+[0;31m==> [1;39mPreprocessing Source/BackgroundPlayback.xm…[m
+[0;31m==> [1;39mPreprocessing Source/SponsorBlock.xm…[m
+[0;31m==> [1;39mPreprocessing Source/PremiumStatus.xm…[m
+[0;31m==> [1;39mPreprocessing Source/VolumeBar/VolumeBar.xm…[m
+[0;31m==> [1;39mPreprocessing Source/OtherSettings.xm…[m
+[0;31m==> [1;39mPreprocessing Source/AVSwitching.xm…[m
+[0;31m==> [1;39mPreprocessing Source/NavBar.xm…[m
+[0;31m==> [1;39mPreprocessing Source/SeekButtons.x…[m
+[0;31m==> [1;39mPreprocessing Source/Settings.x…[m
+[0;31m==> [1;39mPreprocessing Source/Downloading.x…[m
+[0;31m==> [1;39mPreprocessing Source/SelectableLyrics.xm…[m
+[0;31m==> [1;39mPreprocessing Source/Colours.xm…[m
+[0;31m==> [1;39mPreprocessing Source/RemoveAds.xm…[m
+[0;31m==> [1;39mPreprocessing Source/Cast.xm…[m
+[0;31m==> [1;39mPreprocessing Source/DisableAutoPlay.xm…[m
+[0;31m==> [1;39mPreprocessing Sideloading.xm…[m
+[0;32m==> [1;39mCompiling Source/Utils/NSBundle+YTMU.m (arm64)…[m
+[0;32m==> [1;39mCompiling Source/Prefs/PremiumSettingsController.m (arm64)…[m
+[0;32m==> [1;39mCompiling Source/Prefs/NavBarSettingsController.m (arm64)…[m
+[0;32m==> [1;39mCompiling Source/Prefs/ThemeSettingsController.m (arm64)…[m
+[0;32m==> [1;39mCompiling Source/Prefs/TabBarSettingsController.m (arm64)…[m
+[0;32m==> [1;39mCompiling Source/Utils/MBProgressHUD/MBProgressHUD.m (arm64)…[m
+[0;32m==> [1;39mCompiling Source/Prefs/YTMUltimateSettingsController.m (arm64)…[m
+[0;32m==> [1;39mCompiling Source/Prefs/PlayerSettingsController.m (arm64)…[m
+[0;32m==> [1;39mCompiling Source/VolumeBar/GSVolBar.m (arm64)…[m
+[0;32m==> [1;39mCompiling Source/SeekButtons.x (arm64)…[m
+[0;32m==> [1;39mCompiling Source/YTMTab.x (arm64)…[m
+[0;32m==> [1;39mCompiling Source/Settings.x (arm64)…[m
+[0;32m==> [1;39mCompiling Source/PremiumStatus.xm (arm64)…[m
+[0;32m==> [1;39mCompiling Source/Prefs/YTMDownloads.m (arm64)…[m
+[0;32m==> [1;39mCompiling Source/Downloading.x (arm64)…[m
+[0;32m==> [1;39mCompiling Source/FFMpegDownloader.m (arm64)…[m
+[0;32m==> [1;39mCompiling Source/RemoveAds.xm (arm64)…[m
+[0;32m==> [1;39mCompiling Source/Cast.xm (arm64)…[m
+[0;32m==> [1;39mCompiling Source/DisableAutoPlay.xm (arm64)…[m
+[0;32m==> [1;39mCompiling Source/BackgroundPlayback.xm (arm64)…[m
+[0;32m==> [1;39mCompiling Source/Colours.xm (arm64)…[m
+[0;32m==> [1;39mCompiling Source/SponsorBlock.xm (arm64)…[m
+[0;32m==> [1;39mCompiling Source/PlaybackRate.xm (arm64)…[m
+[0;32m==> [1;39mCompiling Source/SelectableLyrics.xm (arm64)…[m
+[0;32m==> [1;39mCompiling Source/OtherSettings.xm (arm64)…[m
+[0;32m==> [1;39mCompiling Source/NavBar.xm (arm64)…[m
+[0;32m==> [1;39mCompiling Source/AVSwitching.xm (arm64)…[m
+[0;32m==> [1;39mCompiling Sideloading.xm (arm64)…[m
+[0;32m==> [1;39mCompiling Source/VolumeBar/VolumeBar.xm (arm64)…[m
+[0;33m==> [1;39mLinking tweak YTMusicUltimate (arm64)…[m
+ld: warning: -multiply_defined is obsolete
+ld: warning: ignoring duplicate libraries: '-lc++'
+ld: warning: mixed ObjC ABI, /Users/Jerry/Documents/GitHub/YTMusicUltimate_fork/Source/Utils/lib/libmobileffmpeg.a[arm64][2](libmobileffmpeg_la-ArchDetect.o) compiled without category class properties
+[0;34m==> [1;39mGenerating debug symbols for YTMusicUltimate…[m
+[0;34m==> [1;39mStripping YTMusicUltimate (arm64)…[m
+[0;34m==> [1;39mSigning YTMusicUltimate…[m
+[1;31m> [1;3;39mMaking stage for tweak YTMusicUltimate…[m
+dm.pl: building package `com.ginsu.ytmusicultimate:iphoneos-arm' in `./packages/com.ginsu.ytmusicultimate_2.3.1_iphoneos-arm.deb'
